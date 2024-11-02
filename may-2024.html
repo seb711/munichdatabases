@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>May 2024 Talks | Munich Database Meetup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+  </head>
+  <body>
+    <a href="/">Munich Database Meetup</a>
+
+    <h1>May 15, 2024 Talks</h1>
+
+    <p>
+      We are pleased to have Danica Fine and Viktor Gamov speak, 
+      and glad to have Google as a
+      partner for the venue.
+    </p>
+
+    <h2>A Kafka Producer’s Request: Or, There and Back Again</h2>
+
+    <img class="profile" src="/assets/danica-fine.jpeg" />
+
+    <p>
+        Danica Fine is a Staff Developer Advocate at Confluent where she helps others get the most out of Kafka, Flink, and their event-driven pipelines. In her previous role as a software engineer on a streaming infrastructure team, she predominantly worked on Kafka Streams- and Kafka Connect-based projects to support computing financial market data at scale. She can be found on Twitter, tweeting about tech, plants, and baking @TheDanicaFine.    </p>
+
+    <ul>
+      <li><a href="https://www.linkedin.com/in/danica-fine/">LinkedIn</a></li>
+    </ul>
+
+    <h3>Talk info</h3>
+
+    <p>
+        Do you know how your data moves into your Apache Kafka® instance? From the programmer’s point of view, it’s relatively simple. But under the hood, writing to Kafka is a complex process with a fascinating life cycle that’s worth understanding.
+
+        Anytime you call producer.send(), those calls are translated into low-level requests which are sent along to the brokers for processing. In this session, we’ll dive into the world of Kafka producers to follow a request from an initial call to send(), all the way to disk, and back to the client via the broker’s final response. Along the way, we’ll explore a number of client and broker configurations that affect how these requests are handled and discuss the metrics that you can monitor to help you to keep track of every stage of the request life cycle.
+        
+        By the end of this session, you’ll know the ins and outs of the read and write requests that your Kafka clients make, making yo ur next debugging or performance analysis session a breeze.    </p>
+
+    <h2>Pinot, Y U So Fast?</h2>
+
+    <img class="profile" src="/assets/renner.jpg" />
+
+    <p>
+        Viktor Gamov is the Head of Developer Advocacy at StarTree, a pioneering company in real-time analytics with Apache Pinot. With a rich background in implementing and advocating for distributed systems and cloud-native architectures, Viktor excels in open-source technologies. He is passionate about assisting architects, developers, and operators in crafting systems that are not only low in latency and scalable but also highly available.    </p>
+
+    <ul>
+      <li><a href="https://www.linkedin.com/in/vikgamov/">LinkedIn</a></li>
+    </ul>
+
+    <h3>Talk info</h3>
+
+    <p>
+        Apache Pinot™ has rapidly emerged as a preferred database for analytical queries, powering transformative applications at industry giants like LinkedIn, Stripe, and Uber. But what sets it apart in the crowded landscape of databases and real-time processing systems? The answer lies in its exceptional speed.
+
+        Pinot’s ability to ingest over a million events per second directly from Kafka makes it an ideal match for streaming architectures. However, its true prowess is showcased in delivering insights with query latencies low enough to support real-time user interface features. This necessitates not only robust Kafka integration but also lightning-fast read operations.
+        
+        In this session, we will delve into the architecture of Pinot’s read path, which scales horizontally across numerous nodes to distribute query processing. We will also explore Pinot’s innovative indexing strategies, which are key to its rapid data retrieval. While there’s no magic formula, Pinot’s indexes are designed to minimize scan times or increase scan speed, thereby enhancing overall performance.
+        
+        Join us to uncover the inner workings of Pinot, understand the principles behind distributed column-oriented databases, and discover why Pinot is increasingly becoming the go-to choice for cutting-edge, real-time analytics applications that demand immediate user-facing insights.    </p>
+  </body>
+</html>
