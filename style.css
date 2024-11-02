@@ -1,0 +1,88 @@
+:root {
+    --serif: "Merriweather", "Georgia", serif;
+    --sans-serif: sans-serif;
+    --mono: "IBM Plex Mono", monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    color: black;
+    font-family: var(--sans-serif);
+    width: 600px;
+    max-width: 100%;
+    margin-bottom: 100px;
+}
+
+body > a {
+    margin-top: 50px;
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--serif);
+}
+
+h2 {
+    margin-top: 100px;
+}
+
+p, li, p a {
+    line-height: 1.75rem;
+    font-family: var(--serif);
+}
+
+li p {
+    margin-top: 0;
+    padding-bottom: 5px;
+}
+
+p:last-child, li:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+img {
+    width: 640px;
+    max-width: 100%;
+}
+
+img.profile {
+    width: 200px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th, td {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+	margin: 15px;
+	max-width: calc(100% - 30px);
+    }
+
+    h2 {
+	margin-top: 45px;
+    }
+
+    body > a {
+	margin-top: 20px;
+    }
+}
