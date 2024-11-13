@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>November 2024 Talks | Munich Database Meetup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+  </head>
+  <body>
+    <a href="/">Munich Database Meetup</a>
+
+    <h1>November 28, 2024 Talks</h1>
+
+    <p>
+        Join us in November for an event focused on innovative strategies driving next-generation data systems. Discover the intricacies of creating scalable, high-performance architectures that power today’s most demanding data-driven applications. From the robust, elastic architecture of Apache Flink to pioneering caching methods in Firebolt, our speakers will explore the advancements making real-time, resilient, and highly concurrent data processing a reality.
+    </p>
+
+    <h2>Confluent: The Elastic Backbone of Apache Flink: A Deep Dive into Its Distributed Database Core</h2>
+
+    <p>
+        David is a Staff Software Engineer at Confluent and one of the Co-Founders of Immerok, which became part of Confluent with the recent acquisition. He's spent most of the last decade working on petabyte-scale data pipelines, messing with database internals, and pushing forward some fantastic engineering teams. His current focus is on the deployment and coordination layer of Apache Flink, making it into the elastic stream processor. David is an Apache Beam and Apache Flink committer.    
+    </p>
+
+    <ul>
+      <li><a href="https://www.linkedin.com/in/david-moravek-0b207946/">LinkedIn</a></li>
+    </ul>
+
+    <h3>Talk info</h3>
+
+    <p>
+        Dive into the world of Apache Flink and discover what it means to be an industry-standard stream processing engine. For true real-time analytics capabilities, Flink operates as a highly optimized, distributed database, designed to handle high-throughput data streams with low-latency and resilience. For the database community, this session will explore the architecture that enables Flink’s elasticity—its ability to scale seamlessly, adapt to fluctuating data loads, and maintain state consistency across a distributed environment. We’ll uncover the inner workings of Flink’s state management, checkpointing, and sharding mechanisms, and discuss the challenges and innovations involved in building an “always-on” system that balances high availability with low latency. Whether you’re a database architect, developer, or enthusiast, join us to gain a deeper understanding of the database principles that make Apache Flink tick.    </p>
+
+    <h2>Firebolt: Caching & Reuse of Subresults across Queries in Firebolt</h2>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/alex-hall-b96127/">LinkedIn</a></li>
+    </ul>
+
+    <h3>Talk info</h3>
+
+    <p>
+        At Firebolt we are building a data warehouse enabling highly concurrent & very low latency analytics. The main use case being “data intensive applications”, think dashboarding or, e.g., FinTech / AdTech apps. As such, the typical workload consists of high volume, sub-second queries which come from a mix of tens / hundreds of patterns.
+        Such repetitive workloads can benefit tremendously from reuse / caching. In analytics systems, caching as a concept is ubiquitous: from buffer pools over final-result caching to materialized views. In this talk, we will present our findings in a surprisingly little-used approach: caching subresults of operators. The idea itself is not new, with first publications appearing in the ‘80s.
+        We will take a look at the cache we built and present how it is used for subresults of arbitrary operators in the query plan, in particular also for hashtables of hash-joins. The latter is so far the main use-case and critically important for some of Firebolt’s customers.
+        This cache was also the key motivation in devising the novel “FireHashJoin”. We will give a quick overview of how it provides a very compact in-memory representation with >5x memory savings on production-data compared to our previous hashtable, thus enabling to cache significantly more hashtables.
+        Finally, we present a variation of an eviction strategy which we benchmarked & tuned on real-world data, showing that it can outperform LRU in terms of “total time saved”.    </p>
+  </body>
+</html>
